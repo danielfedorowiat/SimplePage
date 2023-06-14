@@ -12,7 +12,7 @@
         <img src="https://tse1.mm.bing.net/th?id=OIP.3K4AA470j8W_owhg43hZ0QHaEn&pid=Api"
             alt="Tempelhof Field with kites" width="" 100%">
 
-        <!-- Could we put the image in a header or something? -->
+        
 
         <h1>Picnic - GET TOGETHER at the Tempelhof Filed</h1>
 
@@ -63,14 +63,39 @@
         <p> So why don't you fill in this form, if you are going to attend, and what you are going to bring and so
             forth</p>
 
-        <!-- Daniel: would you program a nice form? -->
+        <h2>Picnic registration</h2>
+            <form action="/dummy">
+                <p>
+                    <label for="firstName">FirstName</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </p>
+                <p>
+                    <label for="lastName">LastName</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </p>
+                <p>
+                    <label for="email">Conact</label>
+                    <input type="email" id="email" name="email" required placeholder="email">
+                </p>
+                
+                    <fieldset>
+                        <legend>Vegetarian vs Meat Eater</legend>
+
+                        <input type="radio" id="vegetarian" name="VvM_E" value="vegetarian">
+                        <label for="vegetarian">Vegetarian</label><br>
+
+                        <input type="radio" id="meatEater" name="VvM_E" value="meatEater">
+                        <label for="meatEater">Meat Eater</label><br>
+                    </fieldset>
+
+                    <label for="things">What will you bring?</label><br>
+                    <textarea id="things" rows="6" cols="35" name="things"></textarea><br>
+                <button>Submit</button>
+            </form>
+
 
 
         <h3>Additional Info</h3>
-        <p>
-            In case you are interested in some more Info about us, you can find some info about <a
-                href="about_daniel.html" target="_blank">Daniel</a> here
-        </p>
         <p>or interested in the history of the <a href="https://en.wikipedia.org/wiki/Tempelhofer_Feld"
                 target="_blank">Tempelhof
                 Field</a>, then check out their Wikipedia page</p>
